@@ -1,5 +1,8 @@
 import express from 'express';
 import { usersCreateController, usersDeleteController, usersFindByIdController, usersFindController, usersUpdateController } from '../controller/users.controller.js';
+import { createRequire } from 'module';
+
+const require = createRequire(import.meta.url);
 
 const useRouter = express.Router();
 
